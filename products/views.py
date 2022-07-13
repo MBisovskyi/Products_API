@@ -4,7 +4,6 @@ from rest_framework.response import Response
 from .serializers import ProductSerializer
 from .models import Product
 from rest_framework import status
-from products import serializers
 
 # Create your views here.
 @api_view(['GET', 'POST'])
