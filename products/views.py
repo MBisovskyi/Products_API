@@ -1,12 +1,10 @@
+from django.http import HttpResponse
 from django.shortcuts import get_object_or_404
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-
-from product_reviews.serializers import ProductReviewSerializer
 from .serializers import ProductSerializer
 from .models import Product
 from rest_framework import status
-from product_reviews.models import ProductReview
 
 # Create your views here.
 @api_view(['GET', 'POST'])
